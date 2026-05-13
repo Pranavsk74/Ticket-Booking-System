@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import loadingGif from '../assets/gifs/GIF.gif';
 
 export default function Loading() {
   return (
@@ -20,7 +21,7 @@ export default function Loading() {
       >
         <div className="border-4 border-charcoal shadow-[8px_8px_0px_0px_rgba(44,62,80,1)] bg-white p-4 mb-16">
           <img 
-            src="/src/assets/gifs/GIF.gif" 
+            src={loadingGif} 
             alt="Loading..." 
             className="w-64 h-64 object-cover"
           />

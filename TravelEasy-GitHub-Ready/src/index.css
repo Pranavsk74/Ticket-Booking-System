@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal font-sans antialiased;
+    background-image: url('./assets/images/reference.jpg'); /* subtle texture placeholder */
+    background-blend-mode: overlay;
+    background-color: #F5F0E6; /* cream/beige */
+  }
+
+  .retro-grid-bg {
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, rgba(44, 62, 80, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(44, 62, 80, 0.05) 1px, transparent 1px);
+  }
+}
+
+@layer components {
+  .btn-retro {
+    @apply px-6 py-3 font-display font-bold uppercase tracking-wider border-2 border-charcoal shadow-[4px_4px_0px_0px_rgba(44,62,80,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all;
+  }
+  
+  .card-retro {
+    @apply bg-white border-2 border-charcoal shadow-[6px_6px_0px_0px_rgba(44,62,80,1)] p-6;
+  }
+}
